@@ -1,7 +1,7 @@
-- Creation of the class task [ ]
-    - name(string) / isTaskDone(boolean) / timeTaskTicked(timestamp/null) / dateOfCreation(timestamp) / typeOfTask(string(daily,weekly...))
-- Creation of the class taskGroup [ ]
-    - nameOfGroup(string) / descriptionOfGroup(string) / tasks(list of task)
+- Creation of the class task [x]
+    - name(string) / isTaskDone(boolean) / timeTaskTicked(Date/null) / dateOfCreation(timestamp) / typeOfTask(string(daily,weekly...)) / taskId (number) / taskIdIndex (number)
+- Creation of the class taskGroup [x]
+    - nameOfGroup(string) / descriptionOfGroup(string) / tasks(list of task) / taskGroupId(number) / taskGroupIdIndex(number)
 - Creation the web pages [ ]
     - task list [ ]
         - HTML [ ]
