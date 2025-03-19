@@ -1,0 +1,13 @@
+- Creation of the class task [ ]
+    - name(string) / isTaskDone(boolean) / timeTaskTicked(timestamp/null) / dateOfCreation(timestamp) / typeOfTask(string(daily,weekly...))
+- Creation of the class taskGroup [ ]
+    - nameOfGroup(string) / descriptionOfGroup(string) / tasks(list of task)
+- Creation the web pages [ ]
+    - task list [ ]
+        - HTML [ ]
+        - SCSS [ ]
+        - TS [ ]
+    - taskdisplay [ ]
+        - HTML [ ]
+        - SCSS [ ]
+        - TS [ ]
