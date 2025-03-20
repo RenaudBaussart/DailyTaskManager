@@ -11,3 +11,4 @@
         - HTML [ ]
         - SCSS [ ]
         - TS [ ]
+- Creation of service for data storage over session [~]
