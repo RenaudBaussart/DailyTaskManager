@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TaskGroup } from './classes/task-group';
 import { WebStorageService } from './services/web-storage.service';
+import { NotificationService } from './services/notification.service';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,10 @@ export class AppComponent {
   // Property to store task group list
   taskGroupList: Array<TaskGroup>;
 
+  // property to store the notification service
+
+  notifService: NotificationService;
+
   // Constructor with injected local storage service
   constructor(public localStoredData: WebStorageService) {
     
@@ -41,7 +46,10 @@ export class AppComponent {
       // If valid, assign retrieved data to taskGroupList
       this.taskGroupList = this.taskGroupListStored;
     }
+
+    this.notifService = new NotificationService;
   }
+  
   // wait for the page to close
   @HostListener('window:beforeunload')
   ngOnDestroy() {
